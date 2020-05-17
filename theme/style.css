@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+body {
+    background-image:url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    border-bottom: 4px solid cornflowerblue;
+    z-index: 2;
+}
+
+#logoHeader {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgHeader {
+    height: 100px;
+    width: 180px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.cmid {
+    min-height: 80vh;
+    width: 70%;
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 10px black;
+    z-index: 1;
+    padding: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Girassol', cursive;
+    color: #9E6C36;
+    background-color: whitesmoke;
+    border-top: 4px solid cornflowerblue;
+    height: 80px;
+    z-index: 2;
+}
+
+.searchBox {
+    background: #9E6C36;
+    height: 34px;
+    border-radius: 34px;
+    padding: 10px;
+}
+
+#searchform {
+    display: flex;
+}
+
+#searchSubmit {
+    border: none;
+    background-color: unset;
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/isearch2.png);
+}
+
+.coucoutest {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover .searchButton {
+    background: #9E6C36;
+    color : #2f3640;
+    border: none;
+}
+
+.searchButton {
+    color: white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: none;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    width: 0px;
+}
+
+#isearch {
+    height: 24px;
+    width: 24px;
+    background-image: url(../img/isearch.png);
+    border: none;
+    background-color: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.cchampions {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cchampions div {
+    margin: 20px 8px 20px 8px;
+}
+
+.cchampions div p {
+    margin: 0;
+    text-align: center;
+}
+
+.cchampions div:hover {
+    color: royalblue;
+    transform: scale(1.1);
+    transition: all 0.25s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.error {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.tftdbtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #9E6C36;
+}
+
+.searchIndex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchIndexText {
+    width: 400px;
+    height: 44px;
+    border-radius: 50px;
+    border: 2px solid grey;
+    margin-right: 14px;
+    padding-left: 20px;
+}
+
+.searchIndexText:focus {
+    outline: none;
+    border: 2px solid royalblue;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.element h1 {
+    font-size: 34px;
+    color: #9E6C36;
+}
+
+.element p {
+    color: royalblue;
+    font-size: 20px;
+}

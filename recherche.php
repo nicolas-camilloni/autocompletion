@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connexion = mysqli_connect("localhost", "root", "", "autocompletion"); 
+$connexion = mysqli_connect("localhost", "nicolas", "Nicoju13", "nicolas-camilloni_autocompletion"); 
 ?>
 
 <!DOCTYPE html>

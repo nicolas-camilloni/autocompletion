@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `autocompletion`
 --
-CREATE DATABASE IF NOT EXISTS `autocompletion` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `autocompletion`;
 
 -- --------------------------------------------------------
 

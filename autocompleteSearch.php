@@ -1,7 +1,7 @@
 <?php
 
 $name = $_POST["name"];
-$connexion = mysqli_connect("localhost", "root", "", "autocompletion");
+$connexion = mysqli_connect("localhost", "nicolas", "Nicoju13", "nicolas-camilloni_autocompletion");
 $requete = "SELECT * FROM champions WHERE nom LIKE '%$name%'";
 $query = mysqli_query($connexion, $requete);
 $resultat = mysqli_fetch_all($query);

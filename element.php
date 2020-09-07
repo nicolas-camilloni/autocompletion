@@ -1,5 +1,5 @@
 <?php
-$cnx = mysqli_connect("localhost", "root", "", "autocompletion"); 
+$cnx = mysqli_connect("localhost", "nicolas", "Nicoju13", "nicolas-camilloni_autocompletion"); 
 if (isset($_GET['idchamp'])){
 $idchamp=$_GET['idchamp'];
 $sql="SELECT * FROM champions WHERE id = $idchamp";

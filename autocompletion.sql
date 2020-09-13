@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `autocompletion`
 --
-CREATE DATABASE IF NOT EXISTS `autocompletion` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `autocompletion`;
 
 -- --------------------------------------------------------
 
@@ -30,8 +28,10 @@ USE `autocompletion`;
 -- Structure de la table `champions`
 --
 
-DROP TABLE IF EXISTS `champions`;
-CREATE TABLE IF NOT EXISTS `champions` (
+use dbs781078;
+
+DROP TABLE IF EXISTS `autocompletion_champions`;
+CREATE TABLE IF NOT EXISTS `autocompletion_champions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(255) NOT NULL,
   `origin` varchar(255) NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `champions` (
 -- Déchargement des données de la table `champions`
 --
 
-INSERT INTO `champions` (`id`, `nom`, `origin`, `class`, `image`) VALUES
+INSERT INTO `autocompletion_champions` (`id`, `nom`, `origin`, `class`, `image`) VALUES
 (1, 'Ahri', 'Star Guardian', 'Sorcerer', 'img/ahri.png'),
 (2, 'Annie', 'Mech Pilot', 'Sorcerer', 'img/annie.png'),
 (3, 'Ashe', 'Celestial', 'Sniper', 'img/ashe.png'),

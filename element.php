@@ -1,8 +1,8 @@
 <?php
-$cnx = mysqli_connect("localhost", "root", "", "autocompletion"); 
+$cnx = mysqli_connect("db5000890310.hosting-data.io", "dbu594451", "S26n6j29p20m13!", "dbs781078");
 if (isset($_GET['idchamp'])){
 $idchamp=$_GET['idchamp'];
-$sql="SELECT * FROM champions WHERE id = $idchamp";
+$sql="SELECT * FROM autocompletion_champions WHERE id = $idchamp";
 $query= mysqli_query($cnx,$sql);
 $resulta = mysqli_fetch_all($query, MYSQLI_ASSOC);
 $taille = count($resulta);

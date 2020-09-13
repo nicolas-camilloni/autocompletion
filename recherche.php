@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connexion = mysqli_connect("localhost", "root", "", "autocompletion"); 
+$connexion = mysqli_connect("db5000890310.hosting-data.io", "dbu594451", "S26n6j29p20m13!", "dbs781078");
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ $connexion = mysqli_connect("localhost", "root", "", "autocompletion");
             <?php
                 if ( isset($_GET["name"]) ) {
                     $name = $_GET["name"];
-                    $requete = "SELECT * FROM champions WHERE nom LIKE '%$name%'";
+                    $requete = "SELECT * FROM autocompletion_champions WHERE nom LIKE '%$name%'";
                     $query = mysqli_query($connexion, $requete);
                     $resultat = mysqli_fetch_all($query);
                     foreach ($resultat as $key => $value) {
